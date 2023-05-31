@@ -1,9 +1,19 @@
 import React, { Fragment } from "react";
-
+import backgroundImage from "./Assets/images/bg.jpg";
 const Home = () => {
   return (
     <Fragment>
-      <h1>WelCome To MernStack Development</h1>
+      <div
+        style={{
+          height: "100vh",
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="home">
+          <p>WellCome To MernStack Development</p>
+        </div>
+      </div>
     </Fragment>
   );
 };
